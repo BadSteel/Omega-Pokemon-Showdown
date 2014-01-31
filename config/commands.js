@@ -623,7 +623,7 @@ var commands = exports.commands = {
 	smogonintro: 'smogintro',
 	smogintro: function(target, room, user) {
 		if (!this.canBroadcast()) return;
-		this.sendReplyBox('Welcome to Smogon\'s Official Pokémon Showdown server! The Mentoring room can be found ' + 
+		this.sendReplyBox('Welcome to Smogon\'s Official Pokémon Showdown server! The Mentoring room can be found ' +
 			'<a href="http://play.pokemonshowdown.com/mentoring">here</a> or by using /join mentoring.<br /><br />' +
 			'Here are some useful links to Smogon\'s Mentorship Program to help you get integrated into the community:<br />' +
 			'- <a href="http://www.smogon.com/mentorship/primer">Smogon Primer: A brief introduction to Smogon\'s subcommunities</a><br />' +
@@ -1007,6 +1007,65 @@ var commands = exports.commands = {
 		if (!this.can('battlemessage')) return false;
 		// secret sysop command
 		room.add(target);
+	},
+
+	/*********************************************************
+	 * Custom commands
+	 *********************************************************/
+
+	reminders: 'reminder',
+	reminder: function(target, room, user) {
+		if (room.type !== 'chat') return this.sendReply("This command can only be used in chatrooms.");
+
+		var parts = target.split(',');
+		var cmd = parts[0].trim().toLowerCase();
+
+		if (cmd in {'':1, show:1, view:1, display:1}) {
+			if (!this.canBroadcast()) return;
+			message = "<strong><font size=\"3\">Reminders for " + room.title + ":</font></strong>";
+			if (room.reminders && room.reminders.length > 0)
+				message += '<ol><li>' + room.reminders.join('</li><li>') + '</li></ol>';
+			else
+				message += "<br /><br />There are no reminders to display";
+			message += "Contact a room owner, leader, or admin if you have a reminder you would like added.";
+			return this.sendReplyBox(message);
+		}
+
+		if (!this.can('declare', null, room)) return false;
+		if (!room.reminders) room.reminders = room.chatRoomData.reminders = [];
+
+		var index = parseInt(parts[1], 10) - 1;
+		var message = parts.slice(2).join(',').trim();
+		switch (cmd) {
+			case 'add':
+				index = room.reminders.length;
+				message = parts.slice(1).join(',').trim();
+				// Fallthrough
+
+			case 'insert':
+				if (!message) return this.sendReply("Your reminder was empty.");
+				if (message.length > 250) return this.sendReply("Your reminder cannot be greater than 250 characters in length.");
+
+				room.reminders.splice(index, 0, message);
+				Rooms.global.writeChatRoomData();
+				return this.sendReply("Your reminder has been inserted.");
+
+			case 'edit':
+				if (!room.reminders[index]) return this.sendReply("There is no such reminder.");
+				if (!message) return this.sendReply("Your reminder was empty.");
+				if (message.length > 250) return this.sendReply("Your reminder cannot be greater than 250 characters in length.");
+
+				room.reminders[index] = message;
+				Rooms.global.writeChatRoomData();
+				return this.sendReply("The reminder has been modified.");
+
+			case 'delete':
+				if (!room.reminders[index]) return this.sendReply("There is no such reminder.");
+
+				this.sendReply(room.reminders.splice(index, 1)[0]);
+				Rooms.global.writeChatRoomData();
+				return this.sendReply("has been deleted from the reminders.");
+		}
 	},
 
 	/*********************************************************
