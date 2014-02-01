@@ -430,3 +430,5 @@ fs.readFile('./config/ipbans.txt', function (err, data) {
 	}
 	Users.checkRangeBanned = Cidr.checker(rangebans);
 });
+
+global.tour = new (require('./tour.js').tour)();
