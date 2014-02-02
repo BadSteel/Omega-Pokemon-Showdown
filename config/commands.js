@@ -1071,7 +1071,7 @@ var commands = exports.commands = {
 	hide: 'hideauth',
 	hideauth: function(target, room, user) {
 		if (!this.can('hideauth')) return false;
-		target = target || config.groups.default.global;
+		target = target || config.groupsranking[0];
 		if (!config.groups[target]) {
 			target = config.groupsranking[0];
 			this.sendReply("You have picked an invalid group, defaulting to '" + target + "'.");
