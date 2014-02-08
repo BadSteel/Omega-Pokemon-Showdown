@@ -1160,6 +1160,16 @@ var commands = exports.commands = {
       		return this.sendReply('No username was specified.');
    this.add(''+user.name+' flash stepped away!'+ (target ? " (" + target + ")" : ""));
         },
+       
+        geass: function (target, room, user) {
+  		var target = this.splitTarget(target);
+  		var targetUser = this.targetUser;
+  	if (!targetUser)
+        	return this.sendReply('User '+this.targetUsername+' not found.');
+  	if (targetUser == null)
+      		return this.sendReply('No username was specified.');
+   this.add(''+user.name+' used the Geass on '+targetUser.name+'!' + (target ? " (" + target + ")" : ""));
+        },
 
 
 	/*********************************************************
