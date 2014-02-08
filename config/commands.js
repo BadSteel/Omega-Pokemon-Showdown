@@ -1102,7 +1102,6 @@ var commands = exports.commands = {
 		return this.sendReply(target.split(',').map(function (s) { return s.trim(); }).randomize()[0]);
 	},
 	
-	afk: 'afk'
 	afk: function(target, room, user, connection) {
            
              if (!user.isAfk) {
