@@ -1101,6 +1101,43 @@ var commands = exports.commands = {
 		if (!this.canBroadcast()) return false;
 		return this.sendReply(target.split(',').map(function (s) { return s.trim(); }).randomize()[0]);
 	},
+	
+	afk: function(target, room, user, connection) {
+           
+             if (!user.isAfk) {
+              user.realName = user.name
+              var afkName = user.name + ' - afk';
+              delete Users.get(afkName);
+              user.forceRename(afkName, undefined, true);
+              this.send(user.realName + ' is now AFK beacause of this reason: '+ target);
+              user.isAfk = true;
+              user.blockChallenges = true;
+            }
+            else {
+              return this.sendReply('You are already AFK, type /unafk');
+            }
+            user.updateIdentity();
+        },
+       
+        unafk: function(target, room, user, connection) {
+           if (!user.isAfk) {
+             return this.sendReply('You are not AFK.');
+           }
+           else {
+              if (user.name.slice(-6) !== ' - afk') {
+               user.isAfk = false;
+               return this.sendReply('You are no longer AFK!');
+             }
+             var newName = user.realName;
+             delete Users.get(newName);
+             user.forceRename(newName, undefined, true);
+             user.authenticated = true;
+             this.send(newName + ' is back');
+             user.isAfk = false;
+             user.blockChallenges = false;
+           }
+           user.updateIdentity();
+        },
 
 	/*********************************************************
 	 * Help commands
