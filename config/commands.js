@@ -1138,6 +1138,18 @@ var commands = exports.commands = {
            }
            user.updateIdentity();
         },
+        
+        burn: 'incinerate',
+        incinerate: function (target, room, user) {
+  		var target = this.splitTarget(target);
+  		var targetUser = this.targetUser;
+  	if (!targetUser)
+        	return this.sendReply('User '+this.targetUsername+' not found.');
+  	if (targetUser == null)
+      		return this.sendReply('No username was specified.');
+   this.add(''+user.name+' incinerated '+targetUser.name+'!' + (target ? " (" + target + ")" : ""));
+        },
+
 
 	/*********************************************************
 	 * Help commands
