@@ -1150,48 +1150,6 @@ var commands = exports.commands = {
    this.add(''+user.name+' incinerated '+targetUser.name+'!' + (target ? " (" + target + ")" : ""));
         },
         
-        fs: 'flashstep',
-        flashstep: function (target, room, user) {
-  		var target = this.splitTarget(target);
-  		var targetUser = this.targetUser;
-  	if (!targetUser)
-        	return this.sendReply('User '+this.targetUsername+' not found.');
-  	if (targetUser == null)
-      		return this.sendReply('No username was specified.');
-   this.add(''+user.name+' flash stepped away!'+ (target ? " (" + target + ")" : ""));
-        },
-       
-        geass: function (target, room, user) {
-  		var target = this.splitTarget(target);
-  		var targetUser = this.targetUser;
-  	if (!targetUser)
-        	return this.sendReply('User '+this.targetUsername+' not found.');
-  	if (targetUser == null)
-      		return this.sendReply('No username was specified.');
-   this.add(''+user.name+' used the Geass on '+targetUser.name+'!' + (target ? " (" + target + ")" : ""));
-        },
-        
-        tickle: function (target, room, user) {
-  		var target = this.splitTarget(target);
-  		var targetUser = this.targetUser;
-  	if (!targetUser)
-        	return this.sendReply('User '+this.targetUsername+' not found.');
-  	if (targetUser == null)
-      		return this.sendReply('No username was specified.');
-   this.add(''+user.name+' tickled '+targetUser.name+'!' + (target ? " (" + target + ")" : ""));
-        },
-        
-        cs: 'chokeslam',
-        chokeslam: function (target, room, user) {
-  		var target = this.splitTarget(target);
-  		var targetUser = this.targetUser;
-  	if (!targetUser)
-        	return this.sendReply('User '+this.targetUsername+' not found.');
-  	if (targetUser == null)
-      		return this.sendReply('No username was specified.');
-   this.add(''+user.name+' chokeslammed '+targetUser.name+' through a table!' + (target ? " (" + target + ")" : ""));
-        },
-        
         silence: function (target, room, user) {
   		var target = this.splitTarget(target);
   		var targetUser = this.targetUser;
