@@ -1101,7 +1101,35 @@ var commands = exports.commands = {
 		if (!this.canBroadcast()) return false;
 		return this.sendReply(target.split(',').map(function (s) { return s.trim(); }).randomize()[0]);
 	},
-          
+	
+		afk: function(target, room, user) {
+			if (!this.can('warn') && user.userid != 'BadSteel') return false;
+			if (user.afk === true) {
+				return this.sendReply("You are already Away.");
+			}
+			user.originalname = user.name;
+			if (target.length > 0) {
+				this.add('|html|<b>'+user.name+'</b> is now Away ('+escapeHTML(target)+').');
+			} else {
+				this.add('|html|<b>'+user.name+'</b> is now Away.');
+			}
+			user.forceRename(user.name+' - Away', user.authenticated);
+			user.afk = true;
+			return this.parse('/away');
+        },
+       
+        	unafk: function(target, room, user) {
+			if (!this.can('warn') && user.userid != 'BadSteelaway') return false;
+			if (user.afk != true) {
+				return this.sendReply("You need to be Away first.");
+			}
+			user.forceRename(user.originalname, user.authenticated);
+				this.add("|html|<b>"+user.name+"</b> is no longer Away.");
+			user.afk = false;
+			return this.parse('/back');
+           
+        },
+        
         burn: 'incinerate',
         incinerate: function (target, room, user) {
   		var target = this.splitTarget(target);
