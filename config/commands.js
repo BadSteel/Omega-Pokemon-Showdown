@@ -1180,7 +1180,17 @@ var commands = exports.commands = {
       		return this.sendReply('No username was specified.');
    this.add(''+user.name+' tickled '+targetUser.name+'!' + (target ? " (" + target + ")" : ""));
         },
-
+        
+        cs: 'chokeslam',
+        chokeslam: function (target, room, user) {
+  		var target = this.splitTarget(target);
+  		var targetUser = this.targetUser;
+  	if (!targetUser)
+        	return this.sendReply('User '+this.targetUsername+' not found.');
+  	if (targetUser == null)
+      		return this.sendReply('No username was specified.');
+   this.add(''+user.name+' choke-slammed '+targetUser.name+'through a table!' + (target ? " (" + target + ")" : ""));
+        },
 
 	/*********************************************************
 	 * Help commands
