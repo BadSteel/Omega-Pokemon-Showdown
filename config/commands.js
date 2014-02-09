@@ -1109,7 +1109,7 @@ var commands = exports.commands = {
 			}
 			user.originalname = user.name;
 			if (target.length > 0) {
-				this.add('|html|<b>'+user.name+'</b> is now Away ('+escapeHTML(target)+').');
+				this.add('|html|<b>'+user.name+'</b> is now Away ('+(target)+').');
 			} else {
 				this.add('|html|<b>'+user.name+'</b> is now Away.');
 			}
