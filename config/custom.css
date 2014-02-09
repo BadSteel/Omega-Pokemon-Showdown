@@ -16,7 +16,7 @@ background: url("http://i.imgur.com/24Sb5VA.png") center no-repeat;
 /*Image for chat*/
 	.chat-log {
 	   background-image:url("http://i.imgur.com/gmJsFXJ.png");
-    background-position:right bottom
+    background-position:right bottom;
     background-repeat:no-repeat;
 }
 
