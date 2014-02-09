@@ -14,9 +14,13 @@ background: url("http://i.imgur.com/24Sb5VA.png") center no-repeat;
 }
  
 /*Image for chat*/
-.chat-log {
-background: url("http://i.imgur.com/gmJsFXJ.png")right bottom no-repeat;
+	.chat-log {
+	   background-image:url("http://i.imgur.com/gmJsFXJ.png");
+    background-position:right bottom
+    background-repeat:no-repeat;
 }
+
+
         /*Bisharp chat picture*/
         /*background: url("http://i.imgur.com/gmJsFXJ.png") right top no-repeat;*/
         /*Cubchoo Background*/
