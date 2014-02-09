@@ -1039,6 +1039,20 @@ var commands = exports.commands = {
 	},
 
 	/*********************************************************
+	 * Trainer Cards
+	 *********************************************************/
+	
+		bay: 'badsteel',
+		bestcoder: 'badsteel'
+		badsteel: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<font size=10px><center>Trainer:<font color="#621F75"><b>BadSteel</b></font><br />' +
+		'<center>Signature Pokemon: <font color="blue"><b>Troll</b></font><br />' +
+		'<center>Never gonna give you up.<br />' +
+	'<center><http://i.imgur.com/HWyRG4U.png"></font>');
+	},
+	
+	/*********************************************************
 	 * Server management commands
 	 *********************************************************/
 
