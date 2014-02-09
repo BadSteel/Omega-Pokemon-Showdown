@@ -1043,7 +1043,7 @@ var commands = exports.commands = {
 	 *********************************************************/
 	
 		bay: 'badsteel',
-		bestcoder: 'badsteel'
+		bestcoder: 'badsteel',
 		badsteel: function (target, room, user) {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox('<font size=10px><center>Trainer:<font color="#621F75"><b>BadSteel</b></font><br />' +
