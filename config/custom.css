@@ -1,0 +1,62 @@
+/*top banner (the part above the chat with the teambuilder and stuff)*/
+#header{
+background:url("http://www.southernbreezefarm.net/sitebuilder/images/blue_banner-760x147.jpg");
+}
+ 
+/*Main background layout (not picture, just a gradient) Remember that in css, backgrounds reapeat horizontally.*/
+body {
+background:url("http://i.imgur.com/Ci5DW3i.jpg");
+}
+ 
+/*Main picuture (goes on top of layout so make sure colors match)*/
+.mainmenuwrapper {
+background: url("http://i.imgur.com/24Sb5VA.png") center no-repeat;
+}
+ 
+/*Image for chat*/
+.chat-log{*/
+        /*Bisharp chat picture*/
+        /*background: url("http://i.imgur.com/gmJsFXJ.png") right top no-repeat;*/
+        /*Cubchoo Background*/
+        /*background: url("") right top no-repeat;
+}
+ 
+/*Background color in chat*/
+.chat-log-add{
+background:#0066b2
+}
+ 
+/*Color for buttons (teambuilder, search for battle, etc.)*/
+.menugroup .button{
+background:#0092FF
+}
+ 
+.menugroup .menugroup{
+text-align:center
+}
+ 
+/*Color when mouse is hovered over button*/
+.menugroup .button:hover {
+background:#23AFFF
+}
+ 
+/*Color for userlist (Try to keep a different color than the chat background8?
+.userlist{
+border-left:1px solid #785936;
+background: #7fd3ff
+}
+ 
+/*Userlist color when mouse is hovered over a name*/
+.userlist li button:hover {
+background:#65a8cc;
+}
+ 
+/*Userlist color when mouse is clicked on a name*/
+.userlist li button:active {
+        background: #3f697f
+}
+ 
+/*Pretty sure this is the color of /declares */
+.message-announce {
+background:#000000
+}
