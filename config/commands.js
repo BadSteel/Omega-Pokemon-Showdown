@@ -1160,6 +1160,17 @@ var commands = exports.commands = {
       		return this.sendReply('No username was specified.');
    this.add(''+user.name+' flipped off '+targetUser.name+'! (´・ω・)╭∩╮' + (target ? " (" + target + ")" : ""));
         },
+        
+        spank: function (target, room, user) {
+  		var target = this.splitTarget(target);
+  		var targetUser = this.targetUser;
+  	if (!targetUser)
+        	return this.sendReply('User '+this.targetUsername+' not found.');
+  	if (targetUser == null)
+      		return this.sendReply('No username was specified.');
+   this.add(''+user.name+' spanked '+targetUser.name+'!' + (target ? " (" + target + ")" : ""));
+        },
+        
 
 	/*********************************************************
 	 * Help commands
