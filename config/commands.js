@@ -1027,7 +1027,7 @@ var commands = exports.commands = {
 		jack: 'jackzero',
 		jackzero: function (target, room, user) {
 		if (!this.canBroadcast()) return;
-		this.sendReplyBox('<center><font color="light blue";font size= "3px"><b>JackZero</b></font><br />' +
+		this.sendReplyBox('<center><font color="aqua";font size= "3px"><b>JackZero</b></font><br />' +
 		'<center>Signature Pokemon: <font color="red"><b>Mega Lucario</b></font><br />' +
 		'<center>Catchphrase: Fk u fgts (´・ω・)╭∩╮<br />' +
 	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/lucario-mega.gif" height="80">');
@@ -1036,7 +1036,7 @@ var commands = exports.commands = {
 		cakez: 'pancakez',
 		pancakez: function (target, room, user) {
 		if (!this.canBroadcast()) return;
-		this.sendReplyBox('<center><font color="red";font size= "3px"><b>pancakez</b></font><br />' +
+		this.sendReplyBox('<center><font color="gold";font size= "3px"><b>pancakez</b></font><br />' +
 		'<center>Signature Pokemon: <font color="blue"><b>Mega Mawile</b></font><br />' +
 		'<center>Catchphrase: "You are a jedi Harry" - Mr. Spock <br />' +
 	'<center><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1LibKkR3J_bpQAjp9L-SEM1ZqVkoAkL9AbxrOW0d6QapWVwGP" height="100">');
@@ -1049,6 +1049,24 @@ var commands = exports.commands = {
 		'<center>Signature Pokemon: <font color="brown"><b>Buizel</b></font><br />' +
 		'<center>Catchphrase: kk <br />' +
 	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/buizel-f.gif">');
+	},
+	
+		jojo: 'aeternis',
+		aeternis: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<center><font color="darkslategrey";font size= "3px"><b>Aeternis</b></font><br />' +
+		'<center>Signature Pokemon: <font color="darkviolet"><b>Latios</b></font><br />' +
+		'<center>Catchphrase: Oderint dum metuant.<br />' +
+	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/latios.gif" height="80">');
+	},
+	
+		emmy: 'merenwen',
+		merenwen: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<center><font color="darkolivegreen";font size= "3px"><b>Merenwen</b></font><br />' +
+		'<center>Signature Pokemon: <font color="black"><b>Umbreon</b></font><br />' +
+		'<center>Catchphrase: The darkest in the night. <br />' +
+	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/umbreon.gif">');
 	},
 
 
