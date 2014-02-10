@@ -1045,7 +1045,7 @@ var commands = exports.commands = {
 	gfy: 'gofuckyourself',
 		gofuckyourself: function (target, room, user) {
 		if (!this.canBroadcast()) return;
-		this.sendReplyBox('<center><img src="http://www.reactiongifs.us/wp-content/uploads/2013/12/go_fuck_yourself_cactus_disney.gif" height="150">');
+		this.sendReplyBox('<center><img src="http://img.pandawhale.com/99761-go-fuck-yourself-with-a-cactus-FGAc.gif" height="150">');
 	},
 
 
