@@ -1068,6 +1068,24 @@ var commands = exports.commands = {
 		'<center>Catchphrase: The darkest in the night. <br />' +
 	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/umbreon.gif">');
 	},
+	
+		hex: 'cobblewobble',
+		cobblewobble: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<center><font color="blue";font size= "3px"><b>CobbleWobble</b></font><br />' +
+		'<center>Signature Pokemon: <font color="indigo"><b>Lampent</b></font><br />' +
+		'<center>Catchphrase: You just got CobbleWobbled o3o! <br />' +
+	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/lampent.gif">');
+	},
+	
+		sofa: 'eevee',
+		eevee: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<center><font color="steelblue";font size= "3px"><b>StarsignOfTheAbyss</b></font><br />' +
+		'<center>Signature Pokemon: <font color="royalblue"><b>Tangela</b></font><br />' +
+		'<center>Catchphrase: Kill yourselves ;> <br />' +
+	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/tangela.gif">');
+	},
 
 
 	/*********************************************************
