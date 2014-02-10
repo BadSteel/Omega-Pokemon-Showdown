@@ -1087,7 +1087,7 @@ var commands = exports.commands = {
 	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/tangela.gif">');
 	},
 	
-		asskay: 'silverkill'
+		asskay: 'silverkill',
 		sk: 'silverkill',
 		silverkill: function (target, room, user) {
 		if (!this.canBroadcast()) return;
