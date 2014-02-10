@@ -1017,19 +1017,19 @@ var commands = exports.commands = {
 		bestcoder: 'badsteel',
 		badsteel: function (target, room, user) {
 		if (!this.canBroadcast()) return;
-		this.sendReplyBox('<center><font color="#621F75";font size= "5px"><b>BadSteel</b></font><br />' +
-		'<center>Signature Pokemon: <font color="blue"><b>Troll</b></font><br />' +
+		this.sendReplyBox('<center><font color="#621F75";font size= "3px"><b>BadSteel</b></font><br />' +
+		'<center>Signature Pokemon: Aggron<font color="blue"><b>Troll</b></font><br />' +
 		'<center>Never gonna give you up.<br />' +
-	'<center><img src="http://i.imgur.com/HWyRG4U.png">');
+	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/aggron.gif" height="80">');
 	},
 
 		ninzya: 'jackzero',
 		jack: 'jackzero',
 		jackzero: function (target, room, user) {
 		if (!this.canBroadcast()) return;
-		this.sendReplyBox('<center><font color="light blue";font size= "5px"><b>JackZero</b></font><br />' +
+		this.sendReplyBox('<center><font color="light blue";font size= "3px"><b>JackZero</b></font><br />' +
 		'<center>Signature Pokemon: <font color="red"><b>Mega Lucario</b></font><br />' +
-		'<center>Catchphrase: (´・ω・)╭∩╮<br />' +
+		'<center>Catchphrase:Fk u fgts (´・ω・)╭∩╮<br />' +
 	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/lucario-mega.gif" height="80">');
 	},
 
