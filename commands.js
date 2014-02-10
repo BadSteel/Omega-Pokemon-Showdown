@@ -1037,6 +1037,30 @@ var commands = exports.commands = {
 		Users.removeBannedWord(target);
 		this.sendReply('Removed \"'+target+'\" from the list of banned words.');
 	},
+
+	/*********************************************************
+	 * Trainer Cards
+	 *********************************************************/
+	
+		bay: 'badsteel',
+		bestcoder: 'badsteel',
+		badsteel: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<center><font color="#621F75";font size= "5px"><b>BadSteel</b></font><br />' +
+		'<left> <img src="http://play.pokemonshowdown.com/sprites/bwani/aggron.gif" /> </left> <center>Signature Pokemon: <font color="blue"><b>Troll</b></font><br /> </center> <right> <img src="http://play.pokemonshowdown.com/sprites/bwani/excadrill.gif" />  +
+		'<center>Never gonna give you up.<br />' +
+	'<center><img src="http://i.imgur.com/HWyRG4U.png">');
+	},
+
+		ninzya: 'jackzero'
+		jack: 'jackzero',
+		jackzero: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<center><font color="light blue";font size= "5px"><b>JackZero</b></font><br />' +
+		'<center>Signature Pokemon: <font color="purple"><b>Mega Lucario</b></font><br />' +
+		'<center> (´・ω・)╭∩╮<br />' +
+	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/lucario-mega.gif">');
+	},
 	
 	/*********************************************************
 	 * Server management commands
