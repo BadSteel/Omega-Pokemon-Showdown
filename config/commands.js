@@ -1036,10 +1036,16 @@ var commands = exports.commands = {
 		cakez: 'pancakez',
 		pancakez: function (target, room, user) {
 		if (!this.canBroadcast()) return;
-		this.sendReplyBox('<center><font color="dark yellow";font size= "3px"><b>pancakez</b></font><br />' +
+		this.sendReplyBox('<center><font color="red";font size= "3px"><b>pancakez</b></font><br />' +
 		'<center>Signature Pokemon: <font color="blue"><b>Mega Mawile</b></font><br />' +
-		'<center>Catchphrase: "You arere a jedi Harry" - Mr. Spock <br />' +
+		'<center>Catchphrase: "You are a jedi Harry" - Mr. Spock <br />' +
 	'<center><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1LibKkR3J_bpQAjp9L-SEM1ZqVkoAkL9AbxrOW0d6QapWVwGP" height="100">');
+	},
+	
+	gfy: 'gofuckyourself',
+		gofuckyourself: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<center><img src="http://www.reactiongifs.us/wp-content/uploads/2013/12/go_fuck_yourself_cactus_disney.gif" height="150">');
 	},
 
 
