@@ -1047,12 +1047,12 @@ var commands = exports.commands = {
 		badsteel: function (target, room, user) {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox('<center><font color="#621F75";font size= "5px"><b>BadSteel</b></font><br />' +
-		'<left> <img src="http://play.pokemonshowdown.com/sprites/bwani/aggron.gif" /> </left> <center>Signature Pokemon: <font color="blue"><b>Troll</b></font><br /> </center> <right> <img src="http://play.pokemonshowdown.com/sprites/bwani/excadrill.gif" />  +
+		'<img src="http://play.pokemonshowdown.com/sprites/bwani/aggron.gif" /> <center>Signature Pokemon: <font color="blue"><b>Troll</b></font><br /> <img src="http://play.pokemonshowdown.com/sprites/bwani/excadrill.gif" />  +
 		'<center>Never gonna give you up.<br />' +
 	'<center><img src="http://i.imgur.com/HWyRG4U.png">');
 	},
 
-		ninzya: 'jackzero'
+		ninzya: 'jackzero',
 		jack: 'jackzero',
 		jackzero: function (target, room, user) {
 		if (!this.canBroadcast()) return;
