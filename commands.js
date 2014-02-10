@@ -1046,10 +1046,19 @@ var commands = exports.commands = {
 		bestcoder: 'badsteel',
 		badsteel: function (target, room, user) {
 		if (!this.canBroadcast()) return;
-		this.sendReplyBox('<font size=10px><center>Trainer:<font color="#621F75"><b>BadSteel</b></font><br />' +
+		this.sendReplyBox('<center><font color="#621F75";font size= "5px"><b>BadSteel</b></font><br />' +
 		'<center>Signature Pokemon: <font color="blue"><b>Troll</b></font><br />' +
 		'<center>Never gonna give you up.<br />' +
-	'<center><http://i.imgur.com/HWyRG4U.png"></font>');
+	'<center><img src="http://i.imgur.com/HWyRG4U.png">');
+	},
+	
+		jack: 'jackzero',
+		jackzero: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<center><font color="light blue";font size= "5px"><b>BadSteel</b></font><br />' +
+		'<center>Signature Pokemon: <font color="grey"><b>Mega Lucario</b></font><br />' +
+		'<center> (´・ω・)╭∩╮<br />' +
+	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/lucario-mega.gif">');
 	},
 	
 	/*********************************************************
