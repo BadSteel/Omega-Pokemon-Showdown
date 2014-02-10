@@ -1038,7 +1038,7 @@ var commands = exports.commands = {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox('<center><font color="yellow";font size= "3px"><b>pancakez</b></font><br />' +
 		'<center>Signature Pokemon: <font color="pink"><b>Mega Mawile</b></font><br />' +
-		'<center>Catchphrase: "You're a jedi Harry" - Mr. Spock <br />' +
+		'<center>Catchphrase: "You arere a jedi Harry" - Mr. Spock <br />' +
 	'<center><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1LibKkR3J_bpQAjp9L-SEM1ZqVkoAkL9AbxrOW0d6QapWVwGP" height="100">');
 	},
 
