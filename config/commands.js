@@ -1013,14 +1013,14 @@ var commands = exports.commands = {
 	 * Trainer Cards
 	 *********************************************************/
 	 
-	 ninzya: 'jackzero'
+	ninzya: 'jackzero'
 	jack: 'jackzero',
 	jackzero: function (target, room, user) {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox('<center><font color="light blue";font size= "5px"><b>JackZero</b></font><br />' +
 		'<center>Signature Pokemon: <font color="red"><b>Mega Lucario</b></font><br />' +
 		'<center>Catchphrase: (´・ω・)╭∩╮<br />' +
-	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/lucario-mega.gif" height="80">');
+	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/lucario-mega.gif">');
 	},
 	
 
