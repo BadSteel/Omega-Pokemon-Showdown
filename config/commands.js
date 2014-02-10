@@ -1096,6 +1096,15 @@ var commands = exports.commands = {
 		'<center>Catchphrase: If you expected some meaningful shit or something like that, you did the wrong command. #SWUG ;> <br />' +
 	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/metagross.gif">');
 	},
+	
+		magiswag: 'princessmagiswag',
+		princessmagiswag: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<center><font color="blue";font size= "3px"><b>Princess MagiSwag</b></font><br />' +
+		'<center>Signature Pokemon: <font color="orange"><b>Magikarp</b></font><br />' +
+		'<center>Catchphrase:  Dont underestimate the power of the feesh <br />' +
+	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/magikarp.gif">');
+	},
 
 
 	/*********************************************************
