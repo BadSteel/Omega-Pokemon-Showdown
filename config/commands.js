@@ -1018,7 +1018,7 @@ var commands = exports.commands = {
 		badsteel: function (target, room, user) {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox('<center><font color="#621F75";font size= "3px"><b>BadSteel</b></font><br />' +
-		'<center>Signature Pokemon: Aggron<font color="blue"><b>Troll</b></font><br />' +
+		'<center>Signature Pokemon: <font color="blue"><b>Aggron</b></font><br />' +
 		'<center>Never gonna give you up.<br />' +
 	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/aggron.gif" height="80">');
 	},
@@ -1042,10 +1042,13 @@ var commands = exports.commands = {
 	'<center><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1LibKkR3J_bpQAjp9L-SEM1ZqVkoAkL9AbxrOW0d6QapWVwGP" height="100">');
 	},
 	
-	gfy: 'gofuckyourself',
-		gofuckyourself: function (target, room, user) {
+		nubnub: 'energ',
+		energ: function (target, room, user) {
 		if (!this.canBroadcast()) return;
-		this.sendReplyBox('<center><img src="http://img.pandawhale.com/99761-go-fuck-yourself-with-a-cactus-FGAc.gif" height="150">');
+		this.sendReplyBox('<center><font color="blue";font size= "3px"><b>EnerG218</b></font><br />' +
+		'<center>Signature Pokemon: <font color="brown"><b>Buizel</b></font><br />' +
+		'<center>Catchphrase: kk <br />' +
+	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/buizel-f.gif">');
 	},
 
 
@@ -1210,6 +1213,12 @@ var commands = exports.commands = {
       		return this.sendReply('No username was specified.');
    this.add(''+user.name+' spanked '+targetUser.name+'!' + (target ? " (" + target + ")" : ""));
         },
+        
+        gfy: 'gofuckyourself',
+		gofuckyourself: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<center><img src="http://img.pandawhale.com/99761-go-fuck-yourself-with-a-cactus-FGAc.gif" height="150">');
+	},
         
 
 	/*********************************************************
