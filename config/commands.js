@@ -1143,6 +1143,15 @@ var commands = exports.commands = {
 		this.sendReplyBox('<center><font color="limegreen";font size= "3px"><b>BEN <font color="midnightblue"; font size= "3px">DROWNED</b></font><br />' +
 	'<center><img src="http://25.media.tumblr.com/tumblr_mc89iiaf2J1r7x6p3o1_400.gif" height="170">');
 	},
+	
+		elite: 'darkcryonics',
+		darkcryonics: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<center><font color="indigo";font size= "3px"><b>DarkCryonics</b></font><br />' +
+		'<center>Signature Pokemon: <font color="royalblue"><b>Butterfree</b></font><br />' +
+		'<center>Catchphrase: The power of this one compels you 030 <br />' +
+	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/butterfree.gif">');
+	},
 
 
 	/*********************************************************
