@@ -1013,6 +1013,11 @@ var commands = exports.commands = {
 	 * Trainer Cards
 	 *********************************************************/
 	
+		kitty: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<center><img src="http://i.imgur.com/MnYi2qI.gif?1">');
+	},	
+	
 		bay: 'badsteel',
 		bestcoder: 'badsteel',
 		badsteel: function (target, room, user) {
