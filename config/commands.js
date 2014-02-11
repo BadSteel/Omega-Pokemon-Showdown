@@ -1045,8 +1045,7 @@ var commands = exports.commands = {
 		'<center>Never gonna give you up.<br />' +
 	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/aggron.gif" height="80">');
 	},
-
-		ninzya: 'jackzero',
+	
 		jack: 'jackzero',
 		jackzero: function (target, room, user) {
 		if (!this.canBroadcast()) return;
@@ -1056,11 +1055,19 @@ var commands = exports.commands = {
 	'<center><img src="http://play.pokemonshowdown.com/sprites/bwani/lucario-mega.gif" height="80">');
 	},
 	
+		ninzya: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<center><font color="seagreen";font size= "3px"><b>Ninzya</b></font><br />' +
+		'<center><font color="black"><b>A puppet that can no longer be used is mere garbage. This puppets role has just ended....</b></font><br />' +
+		'<center>Catchphrase: Checkmate<br />' +
+	'<center><a href="http://www.youtube.com/watch?v=IQ_BQX88g0k"><img src="http://fc07.deviantart.net/fs70/f/2012/229/8/d/skull_kid_animated_sprite__rough_draft__by_imrevned-d5b4eit.gif" height="95"></a>');
+	},
+	
 		cakez: 'pancakez',
 		pancakez: function (target, room, user) {
 		if (!this.canBroadcast()) return;
-		this.sendReplyBox('<center><font color="gold";font size= "3px"><b>pancakez</b></font><br />' +
-		'<center>Signature Pokemon: <font color="blue"><b>Mega Mawile</b></font><br />' +
+		this.sendReplyBox('<c Pokemon: enter><font color="gold";font size= "3px"><b>pancakez</b></font><br />' +
+		'<center>Signature<font color="blue"><b>Mega Mawile</b></font><br />' +
 		'<center>Catchphrase: "You are a jedi Harry" - Mr. Spock <br />' +
 	'<center><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1LibKkR3J_bpQAjp9L-SEM1ZqVkoAkL9AbxrOW0d6QapWVwGP" height="100">');
 	},
