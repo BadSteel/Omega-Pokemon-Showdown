@@ -1137,13 +1137,6 @@ var commands = exports.commands = {
 	'<center><img src="http://25.media.tumblr.com/tumblr_lya4b9ftwQ1qg0dcvo1_500.gif" height="70">');
 	},
 	
-	        ben: 'bendrowned',
-		bendrowned: function (target, room, user) {
-		if (!this.canBroadcast()) return;
-		this.sendReplyBox('<center><font color="limegreen";font size= "3px"><b>BEN <font color="midnightblue"; font size= "3px">DROWNED</b></font><br />' +
-	'<center><img src="http://25.media.tumblr.com/tumblr_mc89iiaf2J1r7x6p3o1_400.gif" height="170">');
-	},
-	
 		elite: 'darkcryonics',
 		darkcryonics: function (target, room, user) {
 		if (!this.canBroadcast()) return;
@@ -1321,6 +1314,21 @@ var commands = exports.commands = {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox('<center><img src="http://img.pandawhale.com/99761-go-fuck-yourself-with-a-cactus-FGAc.gif" height="150">');
 	},
+	
+		
+	        ben: 'bendrowned',
+		bendrowned: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<center><font color="limegreen";font size= "3px"><b>BEN <font color="midnightblue"; font size= "3px">DROWNED</b></font><br />' +
+	'<center><img src="http://25.media.tumblr.com/tumblr_mc89iiaf2J1r7x6p3o1_400.gif" height="170">');
+	},
+	
+	        ld: 'legendarydoge',
+		legendarydoge: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<center><img src="http://i.imgur.com/nMQhzJk.jpg" height="250">');
+	},
+	
         
 
 	/*********************************************************
