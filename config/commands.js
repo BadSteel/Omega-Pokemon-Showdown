@@ -1107,10 +1107,10 @@ var commands = exports.commands = {
 	'<center><img src="http://25.media.tumblr.com/tumblr_lya4b9ftwQ1qg0dcvo1_500.gif" height="70">');
 	},
 	
-	        BEN: 'bendrowned',
+	        ben: 'bendrowned',
 		bendrowned: function (target, room, user) {
 		if (!this.canBroadcast()) return;
-		this.sendReplyBox('<center><font color="limegreen";font size= "3px"><b>BEN<font color="midnightblue"; font size= "3px">DROWNED</b></font><br />' +
+		this.sendReplyBox('<center><font color="limegreen";font size= "3px"><b>BEN <font color="midnightblue"; font size= "3px">DROWNED</b></font><br />' +
 	'<center><img src="http://25.media.tumblr.com/tumblr_mc89iiaf2J1r7x6p3o1_400.gif" height="170">');
 	},
 
