@@ -1010,6 +1010,24 @@ var commands = exports.commands = {
 	},
 	
 	/*********************************************************
+	 * Shop commands
+	 *********************************************************/
+	
+		store: 'shop',
+		shop: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('<table style="width:300px"; align="center" background-color="aquamarine">' +
+		'<tr><th colspan="2">Shop</th>' +
+		'<tr><th>Item</th><th>Price</th>' +
+		'<tr><td>__</td><td>__</td>' +
+		'<tr><td>__</td><td>__</td>' +
+		'<tr><td>__</td><td>__</td>' +
+		'<tr><td>__</td><td>__</td>' +
+		'<tr><td>__</td><td>__</td>' 
+		);
+	},
+	
+	/*********************************************************
 	 * Trainer Cards
 	 *********************************************************/
 	
