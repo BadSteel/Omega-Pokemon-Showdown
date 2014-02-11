@@ -1060,7 +1060,7 @@ var commands = exports.commands = {
 		this.sendReplyBox('<center><font color="seagreen";font size= "3px"><b>Ninzya</b></font><br />' +
 		'<center><font color="black"><b>A puppet that can no longer be used is mere garbage. This puppets role has just ended....</b></font><br />' +
 		'<center>Catchphrase: Checkmate<br />' +
-	'<center><a href="http://www.youtube.com/watch?v=IQ_BQX88g0k"><img src="http://fc07.deviantart.net/fs70/f/2012/229/8/d/skull_kid_animated_sprite__rough_draft__by_imrevned-d5b4eit.gif" height="95"></a>');
+	'<center><a href="http://www.youtube.com/watch?v=IQ_BQX88g0k"><img src="http://fc07.deviantart.net/fs70/f/2012/229/8/d/skull_kid_animated_sprite__rough_draft__by_imrevned-d5b4eit.gif" height="80"></a>');
 	},
 	
 		cakez: 'pancakez',
