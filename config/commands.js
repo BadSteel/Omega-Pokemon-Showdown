@@ -1066,10 +1066,10 @@ var commands = exports.commands = {
 		cakez: 'pancakez',
 		pancakez: function (target, room, user) {
 		if (!this.canBroadcast()) return;
-		this.sendReplyBox('<c Pokemon: enter><font color="gold";font size= "3px"><b>pancakez</b></font><br />' +
+		this.sendReplyBox('<c Pokemon: <center><font color="gold";font size= "3px"><b>pancakez</b></font><br />' +
 		'<center>Signature<font color="blue"><b>Mega Mawile</b></font><br />' +
-		'<center>Catchphrase: "You are a jedi Harry" - Mr. Spock <br />' +
-	'<center><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1LibKkR3J_bpQAjp9L-SEM1ZqVkoAkL9AbxrOW0d6QapWVwGP" height="100">');
+		'<center>Catchphrase: \[T]/ Praise the Sun God \[T]/ <br />' +
+	'<center><img src="http://i.imgur.com/3zmDgxR.png" height="150">');
 	},
 	
 		nubnub: 'energ',
