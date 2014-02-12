@@ -1,0 +1,3 @@
+exports.customavatars = {
+	'jackzero': 'http://i.imgur.com/q2jlRWl.gif'
+};
